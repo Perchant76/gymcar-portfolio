@@ -12,24 +12,28 @@ type Presentation = {
 };
 
 const presentation: Presentation = {
-  mail: "maxencewolff.pro@gmail.com",
-  title: "Hi, I’m Maxence 👋",
+  mail: "gymcar@gmail.com",
+  title: "Ahoj, my sme GymCar 👋",
   // profile: "/profile.webp",
   description:
-    "Bonjour, i'm a *french frontend developer* with over *3 years* of web experience. I am currently working with *NextJS and Typescript*. Outside of work I complete my pokemon card collection and learning TypeScript.",
+    "Sme študenti Gymnázia. Naším cieľom je vytvoriť *efektívnejšie* a *ekologickejšie* riešenie pre študentov, ktorí dochádzajú do školy.  *Študentom školy* chceme pomôcť ušetriť čas a zároveň prispieť k lepšej ochrane *životného prostredia.* Naša aplikácia umožňuje študentom zdieľať cestu do školy s ostatnými spolužiakmi, čo znamená menšie *náklady* na dopravu a využitie kapacity vozidiel. ",
   socials: [
     {
-      label: "X",
-      link: "https://twitter.com/itsstormzz_",
+      label: "Web App",
+      link: "https://gymcar.pro/",
     },
     {
-      label: "Bento",
-      link: "https://bento.me/m-wolff",
+      label: "Instagram",
+      link: "https://instagram.com/gymcar_zh",
     },
     {
-      label: "Github",
-      link: "https://github.com/MaeWolff",
+      label: "TikTok",
+      link: "https://tiktok.com/@gymcar_zh",
     },
+  {
+    label: "GitHub",
+    link: "https://github.com/Perchant76",
+  }
   ],
 };
 

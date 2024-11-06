@@ -46,27 +46,30 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
 
         <SocialLinks />
       </div>
+      <img src="https://gymcar.pro/logo.png" alt="Gymcar Logo"   height="100" />
     </article>
 
     <article class="flex flex-col gap-8">
-      <header class="flex w-full flex-row justify-between gap-2">
+      <header class="flex w-full flex-row justify-between gap-2 ">
         <h3 class="text-lg text-neutral-100">Latest posts</h3>
         <Link href="/posts" label="See all posts" isUnderline target="_self" />
       </header>
       {posts.length === 0 && <p>Soon, stay connected 👀...</p>}
 
-      <section class="flex flex-col gap-4 md:flex-row md:flex-wrap">
-        {
+      <section class="flex flex-col gap-4 md:flex-row md:flex-wrap text-green-600">
+        { 
           posts.length !== 0 &&
             posts
               .slice(0, 2)
               .map((post) => (
-                <PostCard
+                <div class="flex flex-col gap-4 ">
+                <PostCard 
                   publishedAt={post.data.publishedAt}
                   title={post.data.title}
-                  description={post.data.description}
+                  description={''}
                   slug={post.slug}
                 />
+                </div>
               ))
         }
       </section>
@@ -75,7 +78,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
         <h3 class="text-lg text-neutral-100">
-          Selected projects ({projects.length})
+          Aditional Pages ({projects.length})
         </h3>
       </header>
       {projects.length === 0 && <p>Oops, I must work^^^^^</p>}
